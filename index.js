@@ -40,6 +40,7 @@ function checkForLetter(letter) {
             // if all the letters in the guessing word array matches random word join them
             if (guessingWord.join("") === wordToMatch) {
                 //replace the innertext
+                document.getElementById("word").innerText = "You Won! You got the correct word:";
                 updateGame();
             }
         }
@@ -58,7 +59,8 @@ function checkForLetter(letter) {
         //if we run out of guesses display the word
         if (numberOfGuesses === 0) {
             // Display word before reseting game
-            guessingWord = wordToMatch.split()     
+            guessingWord = wordToMatch.split() 
+            document.getElementById("word").innerText = "You Lose. The correct word was:";
         }
     }
     updateGame()
