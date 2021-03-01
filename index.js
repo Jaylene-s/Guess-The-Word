@@ -1,6 +1,6 @@
 //get the elements we need
 const form = document.getElementsByTagName("form")[0];
-const maxGuesses = 8
+const maxGuesses = 5
 //create a variable that will store the letters guessed into an array
 let guessedLetters = []
 //another variable to compare it to the actual random word
